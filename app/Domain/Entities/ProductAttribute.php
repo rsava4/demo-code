@@ -6,7 +6,7 @@ final class ProductAttribute{
 	private $name;
 	private $value;
 
-	public function __construct($id, $name, $value)
+	public function __construct(int $id, string $name, string $value)
 	{
 		$this->_id = $id;
 		$this->name = $name;
