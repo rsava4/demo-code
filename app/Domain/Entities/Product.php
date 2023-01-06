@@ -1,15 +1,22 @@
 <?php
 namespace App\Domain\Entities;
 
+use App\Domain\Entities\Money;
+
 final class Product{
-	public $id;
+	private $id;
 	public $name;
 	public $price;
-	public $attributes;
-	public $id;
-
-	public function __construct()
+	/**
+	 * Summary of __construct
+	 * @param int $id
+	 * @param string $name
+	 * @param Money $price
+	 */
+	public function __construct(int $id, string $name, Money $price)
 	{
-		
+		$this->id = $id;
+		$this->name = $name;
+		$this->price = $price;
 	}
 }
